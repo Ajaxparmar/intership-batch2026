@@ -6,9 +6,44 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="https://www.google.com/search" method="get">
-        <input type="text" name="q" placeholder="search here">
-        <input type="submit" value="search">
+
+    <form>
+        <label for="Fname">First Name</label>
+        <input type="text" placeholder="Enter name" id="Fname" name="Fname" autofocus ><br><br>
+        <label for="Lname">Last Name</label>
+
+        <input type="text" placeholder="Enter Last name" name="Lname" id="Lname"><br><br>
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter email" id="email" name="email"><br><br>
+
+        <label>Phone</label>
+        <input type="number" placeholder="Enter phone number" name="phone"><br><br>
+
+        <label>Gender</label>
+        <input type="radio" name="Gender" id="Male" value="Male"> <label for="Male">Male</label> 
+        <input type="radio" name="Gender" id="Female" value="Female"><label for="Female">Female</label>
+        <input type="radio" name="Gender" id="Other" value="Other"><label for="Other">Other</label>
+        <br><br>
+        <label>Select Subject</label>
+        <input type="checkbox" name="Subject" value="Maths" id="Maths"><label for="Maths">Maths</label>
+        <input type="checkbox" name="Subject" value="Science" id="Science"><label for="Science">Science</label>
+        <input type="checkbox" name="Subject" value="English" id="English"><label for="English">English</label> <br><br>
+
+        <label>select city</label>
+        <select>
+            <option>jind</option>
+            <option>rohtak</option>
+            <option>panipat</option>
+            <option>sonipat</option>
+        </select>
+        <label>Address</label>
+        <textarea cols="20" rows="5">Address: </textarea>
+        <input type="password">
+
+
+     
+        <button>save</button>
+
     </form>
     
 </body>
