@@ -7,7 +7,9 @@
 </head>
 <body>
 
-    <form>
+    <a href="https://www.codescaler.com/" target="_parent">goto code scaler</a>
+
+    <form action="https://internship.codescaler.com/batch" method="post">
         <label for="Fname">First Name</label>
         <input type="text" placeholder="Enter name" id="Fname" name="Fname" autofocus ><br><br>
         <label for="Lname">Last Name</label>
@@ -20,14 +22,14 @@
         <input type="number" placeholder="Enter phone number" name="phone"><br><br>
 
         <label>Gender</label>
-        <input type="radio" name="Gender" id="Male" value="Male"> <label for="Male">Male</label> 
+        <input type="radio" name="Gender" id="Male" value="Male" checked> <label for="Male">Male</label> 
         <input type="radio" name="Gender" id="Female" value="Female"><label for="Female">Female</label>
         <input type="radio" name="Gender" id="Other" value="Other"><label for="Other">Other</label>
         <br><br>
         <label>Select Subject</label>
         <input type="checkbox" name="Subject" value="Maths" id="Maths"><label for="Maths">Maths</label>
         <input type="checkbox" name="Subject" value="Science" id="Science"><label for="Science">Science</label>
-        <input type="checkbox" name="Subject" value="English" id="English"><label for="English">English</label> <br><br>
+        <input type="checkbox" name="Subject" value="English" id="English" checked ><label for="English">English</label> <br><br>
 
         <label>select city</label>
         <select>
@@ -39,9 +41,44 @@
         <label>Address</label>
         <textarea cols="20" rows="5">Address: </textarea>
         <input type="password">
+        <label>upload image </label>
+        <input type="file" multiple accept=".jpg,.png, .jpeg, .pdf"><br>
+
+        <input type="submit" value="click me">
+
+        <label>DOB</label>
+        <input type="date">
+        <input type="datetime-local">
+        <input type="week">
+        <input type="month">
+        <input type="time">
+
+        <input type="color">
+        <label>Hidden value</label>
+        <input type="hidden" value="1002" name="id">
+
+        <input type="image" src="https://www.codescaler.com/logo.png" alt="Submit" wiv>
 
 
+        <input type="range" value="200" max="1000" min="1" name="points">
+
+
+        <button type="button">save ₹1</button>
+        <a href="class3.html">class3</a>
+        <a href="https://www.wikipedia.org" target="_blank">wikipedia</a>
      
+
+        <input type="reset">
+
+        <input type="search">
+
+        <input type="url">
+
+
+        <label for="bname">First name:</label>
+        <input type="text" id="fname" name="bname" dirname="bname.dir">
+        <input type="submit" value="Submit">
+
         <button>save</button>
 
     </form>
