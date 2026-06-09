@@ -7,12 +7,12 @@
 
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 
-// fruits.length = 2;  //   all element print give position 
-//  fruit = fruits.at(2);// element give give position
+// fruits.length = 2;        //   all element print give position 
+//  fruit = fruits.at(2);    // element give give position
 // console.log(fruit);
 
 // const fruits = ["Banana", "Orange", "Apple", "Mango"];
-// let fruit = fruits[2];// same for at 
+// let fruit = fruits[2];   // same for at 
 
 // console.log(fruit);
 
