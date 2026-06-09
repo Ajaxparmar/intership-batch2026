@@ -1,6 +1,8 @@
 // let text1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-// let length = text1.length;
-// console.log(length);
+// let length1 = text1.length;
+// console.log(length1);
+
+
 
 // let text2 = "HELLO WORLD";
 // console.log(text2.charCodeAt(0));
@@ -50,7 +52,7 @@
  
 
 
- let text = "Hello";
-const myArr = text.split("");
- console.log(myArr);
+//  let text = "Hello";
+// const myArr = text.split("");
+//  console.log(myArr);
  
