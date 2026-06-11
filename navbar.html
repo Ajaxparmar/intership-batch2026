@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="//fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .container {
+            border-bottom: 1px solid rgb(233, 229, 221);
+
+
+        }
+
+        .navbar {
+            height: 80px;
+        }
+
+        .flex {
+
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .logo h3 {
+            font-size: 32px;
+        }
+
+        .logo i {
+            font-size: 32px;
+        }
+
+        .nav-item ul li {
+            list-style: none;
+            padding: 0px 10px;
+        }
+
+        .nav-item ul li a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: black;
+        }
+
+        .active {
+            color: #f50537 !important;
+        }
+
+        .search input {
+            font-size: 15px;
+            border-radius:30px 0px 0px 30px;
+            background: white;
+            padding: 8px 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar flex">
+            <div class="logo flex">
+                <h3>Cooking</h3>
+                <i class="fas fa-bread-slice ms-1"></i>
+            </div>
+            <div class="nav-item flex">
+                <ul class="flex">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="index.html">About us</a></li>
+                    <li><a href="#">Classes</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <form class="search">
+                    <input type="search">
+
+                </form>
+                <i class="fa-regular fa-moon"></i>
+            </div>
+        </nav>
+    </div>
+
+</body>
+
+</html>
