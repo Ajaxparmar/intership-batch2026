@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid goldenrod;
+            margin: 20px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr)
+        }
+        .box{
+            background-color: aquamarine;
+            padding: 30px;
+            margin: 10px;
+        }
+        .header{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: #bbca6d;
+        }
+        .sidbar{
+            grid-column-start: 4;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            background-color: #f99a23;
+        }
+        .menu-bar{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 5;
+        }
+        .center-content{
+            background-color: bisque;
+        }
+        .dotted{
+            grid-column-start: 3;
+            grid-column-end: 5;
+            display: flex;
+            gap: 40px;
+            background-color: transparent;
+        }
+        .footer{
+            grid-column-start: 3;
+            grid-column-end: 6;
+        }
+        .circle{
+            background-color: #f99a23;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box header">
+            box 1
+        </div>
+        <div class="box sidbar">
+            box 1
+        </div>
+        <div class="box menu-bar">
+            box 1
+        </div>
+        <div class="box center-content">
+            box 1
+        </div>
+        <div class="box dotted">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="box">
+            box 1
+        </div>
+        <div class="box footer">
+            box 1
+        </div>
+          <div class="box">
+            box 1
+        </div>
+        <div class="box">
+            box 1
+        </div>
+        <div class="box">
+            box 1
+        </div>
+        <div class="box">
+            box 1
+        </div>
+        <div class="box">
+            box 1
+        </div>
+    </div>
+    
+</body>
+</html>
