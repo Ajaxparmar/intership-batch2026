@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let presskey=Number(prompt("Press 1 for new game, Press 2 for resume, Press 3 for Select Player, Press 4 for exit"))
+
+        // switch(presskey)
+        // {   
+        //     case 1:
+        //         console.log("New start");
+        //     break;
+        //     case 2:
+        //         console.log("Resume game")
+        //     break;
+        //     case 3:
+        //         console.log("Select Players")
+        //     break;
+        //     case 4:
+        //         console.log("Exit");
+        //     break;
+        //     default:
+        //         console.log("Invalid input");
+
+        // }
+
+
+
+
+        // 0% to 39% - > D
+        // 40% to 59% -> C 
+        // 60% to 79% -> B
+        // 80% to 100% -> A
+
+        let Webdev = 80, Python = 9, AI = 8, GenAi = 9
+        let per = Math.floor(((Webdev + Python + AI + GenAi) * 100) / 400)
+        console.log(per);
+
+        per = Math.floor(per / 10)
+
+        console.log(per);
+
+        let grade
+        switch (per) {
+            case 0:
+            case 1:
+            case 2:
+            case 3:
+                grade = 'Grade is D'
+                break;
+            case 4:
+            case 5:
+                grade = 'Grade is C'
+                break;
+            case 6:
+            case 7:
+                grade = 'Grade is B'
+                break;
+            case 8:
+            case 9:
+            case 10:
+                grade = 'Grade is A'
+                break;
+            default:
+                grade = 'Invalid grade'
+
+
+        }
+        // let even=0
+        // let odd=0
+
+        // for(let i=19;i<=432;i++){
+        //     document.write(i)
+        //     odd=odd+i
+
+        //     i=i+1;
+        //     document.write("&nbsp",i,"<br>")
+        //     even=even+i;
+
+
+
+        // }
+        // document.write("even: ",even,"<br>")
+
+        // document.write("odd: ",odd)
+
+        // let sum=0
+        // let sum1=0
+        // for(i=1;i<=10;i++){
+        //     if(i%2!=0)
+        //         {
+        //             sum=sum+i
+        //             console.log(i);
+
+        //         }
+        //         else{
+        //             sum1=sum1+i
+        //         }
+        // }
+        // console.log(sum, sum1);
+
+
+        // let no = 346234
+
+        // prime-no
+
+        // 1,2,3,5,7,11,13,17,19,23
+
+        let no = 10
+        let flag = true
+        for (i = 2; i <= no / 2; i++) {
+            if (no % i == 0) {
+                flag = false;
+                break;
+            }
+        }
+
+        if (flag == false) {
+            console.log("Not a prime no");
+            
+        }
+        else{
+            console.log("Its a Prime no");
+            
+        }
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
