@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <script>
+        let j=1;
+            while(j<=0)
+                {
+                    console.log('j', j);
+                    j++
+                }
+
+        let i=1
+        do {
+            console.log(i);
+            i++;
+        }while(i<=0)
+
+
+
+    </script> -->
+
+    <script>
+        //   console.log(username);
+
+        // let username='ravi'
+
+
+
+        // clickme(4,5,"ravi",{name:"sumit"},[3,35,54]) 
+
+        // function clickme(a,b,user, obj,arr)  
+        // {
+        //     let sum=a*b
+        //     console.log("Hello class from function",user,sum,obj.name, arr[2]);
+
+        // }
+
+
+
+        // function sum(a,b)
+        // {
+        //     return a*b
+        //     console.log("this is a*b",a*b);
+        // }
+        // console.log(sum(3,3,4,5,5));
+
+        //     function sum(a, b,c) {
+        //         console.log(a + b+c);
+        //         return a+b+c
+
+        //     }
+
+        //     sum(5,4,4)
+
+        //     function sum(a, b) {
+        //         console.log(a - b);
+        //         return a-b
+
+        //     }
+        //    const myval= sum(5, 4)
+        //    console.log(myval);
+
+
+        const myfun = function getval(a, b) {
+
+            const getsub = function getsub() {
+                return a - b
+                console.log("inner function", a - b);
+
+            }
+            let sub = getsub()
+            let mul = a * b
+            // return {mulval:mul,subval:sub} 
+            let text = `the mul of a*b= ${mul} and a-b is ${sub}`
+
+            return text
+
+        }
+
+        console.log(myfun(2, 4));
+
+
+
+        const myval1 = ((a, b) => {
+            return a * b
+        })
+
+        let val1 = (() => {
+            console.log("Hello arrow");
+            return 'oks'
+
+        })
+
+        console.log("value form arrow function", myval1(34, 54), val1());
+
+
+
+
+
+        function sayHello(name) {
+            return "Hello World"+ name;
+        }
+
+        let a = sayHello('vijay');
+        let b = sayHello('ravi');
+        let c = sayHello('sumit');
+
+
+        console.log(a, b, c);
+        
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
