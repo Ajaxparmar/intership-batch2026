@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    
+        // if(a>b){
+        //     if(a>c){
+        //     console.log("a is greater then B,C");
+        //     }
+        //     else
+        //     {
+        //         console.log("C is greater thenA,B");
+                
+        //     }
+        // }
+        // else
+        //     {
+        //         if(b>c)
+        //             {
+        //                 console.log("B is greater then A, C");
+                        
+        //             }
+        //         else
+        //         {
+        //             console.log("C is greater then A,B");
+                    
+        //         }
+        //     }
+
+
+
+        let a=990
+        let b=1140
+        let c=7730
+        let d=349
+
+        // let maxval= a>b?"A is greater then B":"B is greater then A"
+        // let maxval= a>b?(a>c?"A is greater then B and C":"C is greater then A,B"):b>c?"B is greater then A,C":"C is greater then A, B"
+
+        // console.log(maxval);
+
+
+        if(a>b && a>c)
+            {
+                console.log("A is greater then A, B"); 
+            }
+        else if(b>a && b>c)
+            {
+                console.log("A is greater then A, C");
+            }
+        else if(c>a && c>b)
+            {
+                console.log("C is greater then A, C");
+            }
+
+        
+       let username="vijay@gmail.com"
+       let password="1234"
+       
+    //    let user=prompt("Enter the username")
+    //    let pass=prompt("Enter the password")
+            
+    //    if(uername==user && password==pass)
+    //         {
+    //             console.log("Welcome user");
+                
+    //         }
+    //     else
+    //         {
+    //             console.log("Plz check the password or username");
+                
+    //         }
+
+    // if(user==username)
+    //         {
+    //             if(pass==password)
+    //                 {
+    //                     console.log("welcome user ");
+                        
+    //                 }
+    //             else
+    //             {
+    //                 console.log("plz check the password");
+                    
+    //             }
+    //         }
+    //     else{
+    //         console.log("plz check the username");
+            
+    //     }
+        
+        
+        let no= parseInt(prompt("press 1 for new game, press 2 for resume game press 3 for exit"))
+
+        switch (no) {
+            case 1:
+                console.log("New game started");
+            break;
+            case 2:
+                console.log("Resume game");
+            break;
+            case 3: 
+                console.log("Exit");
+                break;
+            default:
+                console.log("invalid input");
+                
+                break;
+        }
+    
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
