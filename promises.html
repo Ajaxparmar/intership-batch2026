@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <script>
+        function get(a,b,callback)
+            {
+                let sum=0;
+                setTimeout(()=>{
+                    console.log("check");
+                    sum=a+b
+                    callback(sum)
+                },2000)
+              
+              
+                
+            }
+            function show(result)
+                {
+                    console.log("result of a+b ",result);
+                    
+                }
+            get(12,19,show)
+    </script> -->
+
+    <script>
+        function checkItems() {
+
+            let checkItemsPromise = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                  const res=false
+                    if(res)
+                        {
+                        resolve("done")
+                        }
+                    else{
+                        reject("Not done")
+                    }
+                }, 2000)
+            })
+            return checkItemsPromise
+
+        }
+     
+        let result=checkItems().then((getval)=>{
+            return getval
+            
+        }).catch((err)=>{
+            return err
+        })
+
+        
+     
+
+
+
+        
+
+        // console.log(checkItems(res).catch((err)=>{
+        //     console.log("this is an error: ", err);
+            
+        // }));
+        
+        // function orderplace(callback) {
+        //     setTimeout(() => {
+        //         console.log("Order placed");
+        //         let pay = 2000
+        //         const error = new Error("this is error place order")
+        //         callback(error, pay)
+        //     }, 1000)
+
+
+        // }
+        // function payment(callback) {
+        //     setTimeout(() => {
+        //         console.log("Payment is done");
+        //         callback()
+        //     }, 3000)
+
+
+        // }
+        // function invoice(callback) {
+        //     setTimeout(() => {
+        //         console.log("Generate invoice");
+        //         callback()
+        //     }, 2000)
+
+
+        // }
+
+        // checkItems(() => {
+        //     orderplace((err, pay) => {
+        //         console.log(err, pay);
+        //         payment(() => {
+        //             invoice(() => {
+        //                 console.log("all done");
+
+        //             })
+        //         })
+        //     })
+        // })
+
+        // payment()
+        // invoice()
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
